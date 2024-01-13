@@ -1,0 +1,178 @@
+/* TYPOGRAPHY  */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #03A583;
+    background-color: #106455;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: inherit;
+}
+
+h1 {
+    color: #fffffff9;
+    font-size: 3em;
+}
+
+h2 {
+    color: #353535;
+    font-size: 2em;
+}
+
+p {
+
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.soonText {
+    position: relative;
+    top: -50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.soonText h1 {
+
+    line-height: 25px;
+
+}
+
+.altText {
+    font-size: .5em;
+    font-weight: 400;
+    color: #fafbfbca;
+}
+
+.contact {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    color: #fafbfbca;
+}
+
+ 
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #EF0202;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 1s linear infinite;
+    opacity: .99;
+}
+
+@media only screen and (max-width: 767px) {
+   
+
+    h1 { 
+        font-size: 2em;
+    }
+
+    h2 {
+        color: #353535;
+        font-size: 1em;
+    }
+
+    p { 
+        font-size: 12px;  
+    }
+
+    .soonText {
+        top: 50px !important;
+      
+    }
+
+    .soonText h1 {
+
+        line-height: 20px;
+
+    } 
+    .loader {
+        border: 4px solid #f3f3f3; 
+        border-top: 4px solid #EF0202;
+        width: 20px;
+        height: 20px; 
+    }
+    
+}
+
+@media only screen and (max-width: 380px) {
+   
+
+    h1 { 
+        font-size: 1.5em;
+    }
+
+    h2 {
+        color: #353535;
+        font-size: .7em;
+    }
+
+    
+
+    .soonText {
+        top: 50px !important;
+      
+    }
+
+    .soonText h1 {
+
+        line-height: 18px;
+
+    } 
+    .soonText{
+        height: 100%;
+    }
+    .loader {
+        border: 4px solid #f3f3f3; 
+        border-top: 4px solid #EF0202;
+        width: 17px;
+        height: 17px; 
+    }
+    
+}
+
+
+
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
